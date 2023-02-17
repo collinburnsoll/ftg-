@@ -1,0 +1,265 @@
+@import 'https://fonts.googleapis.com/css2?family=Poppins&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Cabin&display=swap';
+
+#buttonText {
+  color: black;
+  font-size: 15pt;
+  font-weight: bold;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#borderText {
+  font-size: 15pt;
+  color: blue;
+  border: 1px solid black;
+}
+#topBorderText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#bottomBorderText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h2 {
+  font-family: courier;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h3 {
+  font-size: 100pt sans-serif;
+}
+h4 {
+  font-size: 100pt sans-serif;
+}
+#cloakText {
+  font-family: Poppins;
+  font-size: 12pt;
+}
+#aboutText {
+  font-family: sans-serif;
+  font-size: 25;
+}
+.rio-hovertaco:hover {
+  color: #fff !important;
+  background-color: #d0d629 !important;
+}
+.rio-taco {
+  color: #fff !important;
+  background-color: #d0d629 !important;
+}
+.clean-button {
+  border: none;
+}
+.rio-hover-lightblue:hover {
+  color: #000 !important;
+  background-color: #f0f0f0 !important;
+}
+.rio-hover-black:hover {
+  color: #000 !important;
+  background-color: #000 !important;
+}
+.gameListText {
+  font-size: 40;
+}
+.minecraftText {
+  padding-right: 6px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+th,
+td {
+  padding: 10px;
+}
+th {
+  background-color: #b0d1d1;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+#exampleText {
+  font-size: 20px;
+}
+/*nav {
+	display: flex;
+	justify-content: center;
+}*/
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.container {
+	width: 100%;
+}
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+nav li {
+	display: inline-block;
+	margin: 0 130px;
+}
+header {
+	border: 1px solid black;
+	background-color: #f0f0f0;
+}
+nav li:hover header {
+	background-color: #000;
+}
+.div1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.div2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.div3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 30px;
+}
+/*.div4 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}*/
+.wrapper {
+  position: relative;
+  display: flex;
+  min-width: 100px;
+}
+
+.search {
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 25px;
+  width: 100%;
+  padding: 2px 23px 2px 30px;
+  outline: 0;
+  background-color: #f5f5f5;
+}
+
+.search-icon {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 14px;
+}
+
+.search:hover, .search:focus {
+  border: 1px solid #009688;
+  background-color: white;
+}
+.filter-wrap {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 280px);
+    grid-auto-flow: row;
+    grid-gap: 20px;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem;
+    font-size: 75%;
+}
+#bottomLinks {
+	display: none;
+}
+#topLinks {
+	display: block;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+}
+#home {
+	display: block;
+}
+#games {
+	display: none;
+}
+#settings {
+	display: none;
+}
+/*Typing*/
+/*
+.home_content {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Sans-serif;
+}
+
+.home_content .wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.home_content .typing {
+  width: 24ch;
+  animation: typing 3s steps(24, end), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 2em;
+  font-family: poppins;
+  color: var(--textcolor);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}*/
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
